@@ -3,19 +3,19 @@
 
 ## 채팅 클라이언트 구현
 
-주어진 채팅 서버(https://snu-web-random-chat.herokuapp.com/)를 이용하여, 채팅 클라이언트를 구현한다.
+주어진 채팅 서버( https://snu-web-random-chat.herokuapp.com/ )를 이용하여, 채팅 클라이언트를 구현한다.
 서버 endpoint는 다음과 같다.
 
 :POST /login { name }
 
--> { key, name, created }
+-> { key, name, createdAt }
 
-:GET /chats { createdFrom, createdTo, orderBy }
+:GET /chats { createdAtFrom, createdAtTo, orderBy }
 
 -> [
-  { user, message, created, },
-  { user, message, created, },
-  { user, message, created, }
+  { user, message, createdAt, },
+  { user, message, createdAt, },
+  { user, message, createdAt, }
 ]
 
 
@@ -36,8 +36,8 @@ Authorization: Key sdfsdlfkje23rdsfsi9fergi
 - react functional component 사용
 - fetch 사용
 - dayjs 사용해도되나, 사용하지 않아도 무방.
-- ui framework 사용가능(material design, bootstrap...)
-- 그 외 라이브러리 사용 불허
+- ui framework 1개 이상 사용.(material design, bootstrap...)
+
 
 ### 기능
 - 가벼운 카카오 오픈채팅방이라고 보면 됨
