@@ -18,6 +18,16 @@
   { user, message, createdAt, }
 ]
 
+maximum 100 messages are loaded. You must use createdFrom, createdTo, orderBy=(asc,desc) to load more messages.
+
+for example, 
+```
+{"_id":"5ddfae935f3e3500043a8da8","message":"","createdAt":1574940307945,"userName":"hihihihiihi"}
+```
+when last message is like that, you can load more message using like
+
+https://snu-web-random-chat.herokuapp.com/chats?createdAtFrom=1574940307945
+
 
 :POST /chats  (auth_required)
 
