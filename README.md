@@ -15,7 +15,8 @@
 -> [
   { user, message, createdAt, },
   { user, message, createdAt, },
-  { user, message, createdAt, }
+  { user, message, createdAt, },
+  ...
 ]
 
 maximum 100 messages are loaded. You must use createdFrom, createdTo, orderBy=(asc,desc) to load more messages.
@@ -24,7 +25,7 @@ for example,
 ```
 {"_id":"5ddfae935f3e3500043a8da8","message":"","createdAt":1574940307945,"userName":"hihihihiihi"}
 ```
-when last message is like that, you can load more message using like
+when last message is like that, you can load more messages by sending
 
 https://snu-web-random-chat.herokuapp.com/chats?createdAtFrom=1574940307945
 
@@ -55,6 +56,7 @@ Authorization: Key sdfsdlfkje23rdsfsi9fergi
 - 로그인 버튼을 누르면, name을 입력할 수 있고 입력하면. 로그인 완료.
 - 로그인 완료 시 채팅 입력 가능.
 - 3초에 한 번씩 서버 채팅 목록을 가져와, 새로운것이 있으면 업데이트 해줌.
+- 메시지 입력 완료 시, 서버에서 바로 채팅 목록 가져와서 refresh.
 - 로그인 이력이 있을 시, 자동으로 로그인 시도.
 
 ### 추가스펙
