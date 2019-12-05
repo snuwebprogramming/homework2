@@ -10,7 +10,7 @@
 
 -> { key, name, createdAt }
 
-:GET /chats { createdAtFrom, createdAtTo, orderBy }
+:GET /chats { createdAtFrom, createdAtTo, order }
 
 -> [
   { user, message, createdAt, },
