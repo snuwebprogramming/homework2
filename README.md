@@ -19,7 +19,7 @@
   ...
 ]
 
-maximum 100 messages are loaded. You must use createdFrom, createdTo, orderBy=(asc,desc) to load more messages.
+maximum 100 messages are loaded. You must use createdFrom, createdTo, order=(asc,desc) to load more messages.
 
 for example, 
 ```
@@ -48,7 +48,7 @@ Authorization: Key sdfsdlfkje23rdsfsi9fergi
 - fetch 사용
 - dayjs 사용해도되나, 사용하지 않아도 무방.
 - ui framework 1개 이상 사용.(material design, bootstrap...)
-
+- eslint 사용. airbnb | google (npx eslint --init)
 
 ### 기능
 - 가벼운 카카오 오픈채팅방이라고 보면 됨
